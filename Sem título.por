@@ -1,23 +1,16 @@
 programa {
   funcao inicio() {
-    
-    inteiro idade
-    real altura
-    cadeia fone
-    caracter sexo
+    real numero
 
-    escreva("iforme seu nome: ")
-    leia(nome)
+    escreva("informe o número: ")
+    leia(numero)
 
-    escreva("informe o sexo que se considera: ")
-    leia(sexo)
-    
-    escreva("iforme seu fone: ")
-    leia(fone)
-
-     escreva("seu nome é: ", nome, ", você tem ", idade, " anos", "possui altura de ", altura)
-
-    escreva(" e se considera do sexo ", sexo)
+    se(numero %3 ==0 e numero %5 == 0)
+    {
+    escreva ("o numero informado é multiplos por 3 e 5") }
+    senao { 
+      escreva("o numero informado não é multiplos por 3 e 5")
+    }
 
   }
 }
